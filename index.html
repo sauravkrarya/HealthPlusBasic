@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>HEALTH⁺</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="png" href="./img/health plus favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+
+</head>
+<style>
+    body {
+        background-color: rgb(195, 255, 253);
+        font-family: sans;
+    }
+</style>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <img src="./img/health plus logo.jfif" alt="logo" id="logo">
+                <a class="navbar-brand" href="#">HEALTH<span>⁺</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Book Appointment</a></li>
+                                <li><a class="dropdown-item" href="#">Blood Donation</a></li>
+                                <li><a class="dropdown-item" href="#">Consult Online</a></li>
+                                <li><a class="dropdown-item" href="#">Find Hospitals</a></li>
+                                <li><a class="dropdown-item" href="#">Find a Doctor</a></li>
+                                <li><a class="dropdown-item" href="#">Buy Medicines</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Excellence
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                                <li><a class="dropdown-item" href="#">Orthopedics</a></li>
+                                <li><a class="dropdown-item" href="#">Gastroentrology</a></li>
+                                <li><a class="dropdown-item" href="#">Neurology</a></li>
+                                <li><a class="dropdown-item" href="#">Oncology</a></li>
+                                <li><a class="dropdown-item" href="#">Dermatology</a></li>
+                                <li><a class="dropdown-item" href="#">Nephrology</a></li>
+                                <li><a class="dropdown-item" href="#">dentistry</a></li>
+                                <li><a class="dropdown-item" href="#">ENT(Ear|Nose|Throat)</a></li>
+                                <li><a class="dropdown-item" href="#">Oncology</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Patient Care
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Find a Doctor</a></li>
+                                <li><a class="dropdown-item" href="#">Buy Medicines</a></li>
+                                <!-- <li><a class="dropdown-item" href="#">Consult Online</a></li> -->
+                                <li><a class="dropdown-item" href="#">Health & Lifestyle</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hospitals
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">SUM Hospitals</a></li>
+                                <li><a class="dropdown-item" href="#">Apollo Hospitals</a></li>
+                                <li><a class="dropdown-item" href="#"> HI-TECH Hospital</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <!-- <hr>
+        <div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+        </div> -->
+        </nav>
+        <div class="info">
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="login.html">Log in </a>
+
+
+        </div>
+    </header>
+    <main>
+        <div class="carousel2">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/c1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Health is not just about what you're eating! It's also about what you're thinking and
+                                saying.</h5>
+                            <p class="cText">Welcome to Health Plus: Your Destination for Wellness and Vitality.
+                                Discover
+                                tips, resources, and support to live your healthiest life.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/c2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>The greatest wealth is health.</h5>
+                            <p class="cText">Empowering You to Achieve Optimal Health. Explore our expert advice,
+                                nutritious
+                                recipes, and wellness guides.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/c3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Take care of your body. It's the only place you have to live.</h5>
+                            <p class="cText">Your Health, Our Priority. Join us on a journey to better health with
+                                comprehensive insights and personalized care solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="stick">
+            <a href="tel:1800234986" class="btn1 helpline">HelpLine:<br> 1800-234-986</a>
+            <a href="tel:911" class="btn1 ambulance">Call Ambulance</a>
+        </div>
+        <div class="operations">
+            <a href="appointment.html">Book Appointment</a>
+            <a href="blood.html">Need Blood?</a>
+        </div>
+
+        <div class="icon-container">
+            <a href="www.whatsapp.com" class="social whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="www.facebook.com" class="social facebook"><i class="bi bi-facebook"></i></a>
+            <a href="www.twitter.com" class="social twitter"><i class="bi bi-twitter"></i></a>
+            <a href="www.youtube.com" class="social youtube"><i class="bi bi-youtube"></i></a>
+            <a href="www.linkedin.com" class="social linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="services" id="services">
+            <h1 class="text-center" style="margin-top:50px;">Services</h1>
+            <hr size="3px" width="90%" color="black">
+            <div class="serviceContainer">
+                <div class="serviceItem" id="serviceItem1"><a href="#services">Book Appointment</a>
+                    <p>Book appointment online to get rid of long queues.</p>
+                </div>
+                <div class="serviceItem" id="serviceItem1"><a href="#services">OPD Service</a>
+                    <p>Book appointment online for the Out Patient Department.</p>
+                </div>
+                <div class="serviceItem" id="serviceItem2"><a href="#services">Consult Online</a>
+                    <p>Unable to go to hospital? You can consult right from your home. </p>
+                </div>
+                <div class="serviceItem" id="serviceItem3"><a href="#services">Find Hospital</a>
+                    <p>Find the Hospital that you want, all over the city.</p>
+                </div>
+                <div class="serviceItem" id="serviceItem4"><a href="#services">Buy medicines</a>
+                    <p>Easy and issueless delivery to your Doorstep.</p>
+                </div>
+                <div class="serviceItem" id="serviceItem5"><a href="#services">Donate/need blood</a>Donate blood, save
+                    lives; your gift is someone's hope</div>
+                <div class="serviceItem" id="serviceItem6"><a href="#services">Find Doctor</a>
+                    <p>Find the best doctors and book consultation.</p>
+                </div>
+                <div class="serviceItem" id="serviceItem7"><a href="#services">More Services...</a>
+                    <p>Get all the services Offered By HEALTH⁺</p>
+                </div>
+                <!-- <div class="serviceItem" id="serviceItem7"><a href="#services">item7</a></div>
+            <div class="serviceItem" id="serviceItem8"><a href="#services">item8</a></div> -->
+            </div>
+        </div>
+
+
+        <!-- <div class="departments">
+        <h1>Our Excellence in Departments</h1><hr size="3px" width="90%" color="black"   >
+        <div class="deptContainer">
+            <div class="deptItem"id="deptItem1"></div>
+            <div class="deptItem"id="deptItem2"></div>
+            <div class="deptItem"id="deptItem3"></div>
+            <div class="deptItem"id="deptItem4"></div>
+            <div class="deptItem"id="deptItem5"></div>
+            <div class="deptItem"id="deptItem6"></div>
+            <div class="deptItem"id="deptItem7"></div>
+            <div class="deptItem"id="deptItem8"></div>
+        </div>
+    </div> -->
+        <div class="departments">
+            <h1 style="margin-top:50px">Our Excellence in Departments</h1>
+            <hr size="3px" width="90%" color="black">
+            <div class="deptContainer">
+                <div class="deptItem" id="deptItem1">
+                    <i class="bi bi-heart-pulse"></i>
+                    <h2><a href=".departments">Cardiology</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem2">
+                    <i class="bi bi-heart-fill"></i>
+                    <h2><a href=".departments">Gastroentrology</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem3">
+                    <i class="fa-solid fa-brain"></i>
+                    <h2><a href=".departments">Neurology</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem4">
+                    <i class="fa-solid fa-bone"></i>
+                    <h2><a href=".departments">Orthopedic</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem5">
+                    <i class="bi bi-file-earmark-person"></i>
+                    <h2><a href=".departments">Dermatology</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem6">
+                    <i class="bi bi-droplet-half"></i>
+                    <h2><a href=".departments">Nephrology</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem7">
+                    <i class="fa-solid fa-tooth"></i>
+                    <h2><a href=".departments">Dentistry</a></h2>
+                </div>
+                <div class="deptItem" id="deptItem8">
+                    <i class="bi bi-ear"></i>
+                    <h2><a href=".departments">ENT</a></h2>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="hospitals">
+        <h1>Hospitals With Us</h1><hr size="3px" width="90%" color="black"   >
+        <div class="hospitalContainer">
+            <div class="hospitalItem"></div>
+        </div>
+    </div> -->
+        <div class="hospitals">
+            <h1 style="margin-top:50px;">Hospitals With Us</h1>
+            <hr size="3px" width="90%" color="black">
+            <div class="hospitalContainer">
+                <div class="hospitalCard">
+                    <img src="./img/medicare logo.webp" alt="Hospital Logo 1" class="hospitalLogo">
+                    <h2>Medi Care Hospital</h2>
+                    <p>Providing quality healthcare services to the community for over 50 years.</p>
+                    <button name="Medicare Hospital" onclick="hospitalDetails('Medicare Hospital')">View
+                        Details</button>
+                </div>
+                <div class="hospitalCard">
+                    <img src="./img/sum logo.jfif" alt="Hospital Logo 2" class="hospitalLogo">
+                    <h2>Global Health Clinic</h2>
+                    <p>World-class medical services with a focus on patient care and comfort.</p>
+                    <button name="Global Health Clinic" onclick="hospitalDetails('Global Health Clinic')">View
+                        Details</button>
+                </div>
+                <div class="hospitalCard">
+                    <img src="./img/apollo logo.jfif" alt="Hospital Logo 3" class="hospitalLogo">
+                    <h2>Sunrise Medical Center</h2>
+                    <p>State-of-the-art facilities and experienced medical professionals.</p>
+                    <button name="Sunrise Medical Center" onclick="hospitalDetails('Sunrise Medical Center')">View
+                        Details</button>
+                </div>
+                <div class="hospitalCard">
+                    <img src="./img/kims logo.jfif" alt="Hospital Logo 4" class="hospitalLogo">
+                    <h2>Heal Well Hospital</h2>
+                    <p>Committed to providing compassionate and comprehensive care.</p>
+                    <button name="Heal Well Hospital" onclick="hospitalDetails('Heal Well Hospital')">View
+                        Details</button>
+                </div>
+                <div class="hospitalCard">
+                    <img src="./img/hitech logo.jfif" alt="Hospital Logo 5" class="hospitalLogo">
+                    <h2>Heal Well Hospital</h2>
+                    <p>Committed to providing compassionate and comprehensive care.</p>
+                    <button name="Heal Well Hospital" onclick="hospitalDetails('Heal Well Hospital')">View
+                        Details</button>
+                </div>
+                <div class="hospitalCard">
+                    <img src="./img/care hospital.png" alt="Hospital Logo 6" class="hospitalLogo">
+                    <h2>Care Hospital</h2>
+                    <p>Committed to providing compassionate and comprehensive care.</p>
+                    <button name="Care Hospital" onclick="hospitalDetails('Care Hospital')">View Details</button>
+                </div>
+                <div class="hospitalCard">
+                    <img src="./img/medilife logo.avif" alt="Hospital Logo 7" class="hospitalLogo">
+                    <h2>MedLife Hospital</h2>
+                    <p>Committed to providing compassionate and comprehensive care.</p>
+                    <button name="MedLife Hospital" onclick="hospitalDetails('MedLife Hospital')">View Details</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container why-choose-health">
+            <h1>Why Choose Health+</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 description">
+                    <p>Health Plus stands out for its comprehensive care, experienced medical team, and user-friendly
+                        platform. We offer a wide range of services, easy appointment booking, and personalized patient
+                        care, ensuring you receive the best medical attention when you need it most. Choose Health Plus
+                        for a seamless and efficient healthcare experience.</p>
+                    <img src="./img/happy patients.webp" alt="Health Plus">
+                </div>
+                <div class="col-md-6 stats">
+                    <div class="stat-box">
+                        <h2 id="network-hospitals">0+</h2>
+                        <p>Network of Hospitals</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2 id="diagnostic-centers">0+</h2>
+                        <p>Diagnostic Centers</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2 id="pharmacies">0+</h2>
+                        <p>Pharmacies</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2 id="doctors">0+</h2>
+                        <p>Doctors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container blog-section">
+            <h1>Latest Blogs</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="./img/blog11.jfif" alt="Blog 1">
+                        <div class="blog-card-body">
+                            <h5>First Aid Basics Everyone Should Know</h5>
+                            <p class="short-description">First aid is the initial care provided to a person suffering
+                                from an illness or injury.</p>
+                            <p class="full-description">First aid is the initial care provided to a person suffering
+                                from an illness or injury. Essential first aid skills include CPR, wound cleaning and
+                                bandaging, treating burns, and managing fractures and sprains. Knowing how to perform
+                                the Heimlich maneuver for choking, and understanding basic procedures for shock and
+                                allergic reactions, can be lifesaving. First aid training empowers individuals to
+                                respond effectively in emergencies, providing critical support until professional
+                                medical help arrives. </p>
+                            <button class="see-more-btn" onclick="toggleDescription(this)">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="./img/allergy.jfif" alt="Blog 2">
+                        <div class="blog-card-body">
+                            <h5>Dealing with Allergies: Tips and Treatments</h5>
+                            <p class="short-description">Managing allergies involves identifying triggers and minimizing
+                                exposure to allergens</p>
+                            <p class="full-description">Managing allergies involves identifying triggers and minimizing
+                                exposure to allergens like pollen, dust mites, pet dander, and certain foods. Regular
+                                cleaning, using air purifiers, and avoiding known allergens can help reduce symptoms.
+                                Over-the-counter antihistamines, decongestants, and nasal corticosteroids are common
+                                treatments that alleviate allergic reactions. </p>
+
+                            <button class="see-more-btn" onclick="toggleDescription(this)">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="./img/healthblog.jfif" alt="Blog 3">
+                        <div class="blog-card-body">
+                            <h5>How to choose Right HealthCare Provider.</h5>
+                            <p class="short-description">Choosing the right healthcare provider involves researching
+                                credentials, experience, </p>
+                            <p class="full-description">Choosing the right healthcare provider involves researching
+                                credentials, experience, and patient reviews. Ensure they are in-network with your
+                                insurance and have a convenient location. Consider their communication style and
+                                availability for appointments. Personal recommendations and consultations can also help
+                                determine if they meet your needs. Prioritizing these factors will help you find a
+                                provider who offers quality care and fits your preferences.</p>
+                            <button class="see-more-btn" onclick="toggleDescription(this)">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="blog-card">
+                        <img src="./img/sleepblog.png" alt="Blog 4">
+                        <div class="blog-card-body">
+                            <h5>The Impact of Sleep on Health</h5>
+                            <p class="short-description">Adequate sleep is crucial for overall health, affecting
+                                physical, mental, and emotional well-being.</p>
+                            <p class="full-description">Adequate sleep is crucial for overall health, affecting
+                                physical, mental, and emotional well-being. Quality sleep supports immune function,
+                                cognitive performance, and emotional stability. It reduces the risk of chronic
+                                conditions like heart disease, diabetes, and obesity. Proper sleep enhances memory,
+                                concentration, and mood. Prioritizing sleep hygiene, such as maintaining a regular sleep
+                                schedule and creating a restful environment, is essential for optimal health and daily
+                                functioning.</p>
+                            <button class="see-more-btn" onclick="toggleDescription(this)">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <h2>How can we Assist You today?</h2>
+            <hr>
+            <div class="help-container">
+                <a href="#" class="help-item">Book</br> Appointment</a>
+                <a href="#" class="help-item">OPD Services</a>
+                <a href="#" class="help-item">Consult Online</a>
+                <a href="#" class="help-item">Find Hospital</a>
+                <a href="#" class="help-item">Buy Medicines</a>
+                <a href="#" class="help-item">Donate Blood</a>
+                <a href="#" class="help-item">Find Doctor</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About HEALTH⁺</h5>
+                    <p>Health Plus stands out for its comprehensive care, experienced medical team, and user-friendly
+                        platform. Choose Health Plus for a seamless and efficient healthcare experience.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Appointments</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i> Jagamara, Khandagiri, Bhubaneswar<br>
+                        <i class="fas fa-phone"></i> +1800-234-986<br>
+                        <i class="fas fa-envelope"></i> team8@healthplus.com
+                    </p>
+                </div>
+
+                <div class="col-md-3 map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4573.323127376766!2d85.79022786663565!3d20.261333727253756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1721923401086!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Health Plus. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        function hospitalDetails(hospitalName) {
+            const hospitals = {
+                "Medicare Hospital": {
+                    name: "Medicare Hospital",
+                    description: "Providing quality healthcare services to the community for over 50 years.",
+                    logo: "./img/medicare logo.webp"
+                },
+                "Global Health Clinic": {
+                    name: "Global Health Clinic",
+                    description: "World-class medical services with a focus on patient care and comfort.",
+                    logo: "./img/sum logo.jfif"
+                },
+                "Sunrise Medical Center": {
+                    name: "Sunrise Medical Center",
+                    description: "State-of-the-art facilities and experienced medical professionals.",
+                    logo: "./img/apollo logo.jfif"
+                },
+                "Heal Well Hospital": {
+                    name: "Heal Well Hospital",
+                    description: "Committed to providing compassionate and comprehensive care.",
+                    logo: "./img/kims logo.jfif"
+                },
+                "Care Hospital": {
+                    name: "Care Hospital",
+                    description: "Committed to providing compassionate and comprehensive care.",
+                    logo: "./img/care hospital.png"
+                },
+                "MedLife Hospital": {
+                    name: "MedLife Hospital",
+                    description: "Committed to providing compassionate and comprehensive care.",
+                    logo: "./img/medilife logo.avif"
+                }
+            };
+
+            // localStorage.setItem('selectedHospital', JSON.stringify(hospitals[hospitalName]));
+            // window.location.href = 'hospital-details.html';
+            localStorage.setItem('selectedHospital', JSON.stringify(hospitals[hospitalName]));
+            window.open('hospital-details.html', '_blank');
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const hospitals = 10;
+            const diagnosticCenters = 50;
+            const pharmacies = 10;
+            const doctors = 500;
+
+            function animateNumbers(elementId, number) {
+                let counter = 0;
+                const element = document.getElementById(elementId);
+                const interval = setInterval(() => {
+                    if (counter >= number) {
+                        clearInterval(interval);
+                    } else {
+                        counter++;
+                        element.textContent = counter + '+';
+                    }
+                }, 20);
+            }
+
+            animateNumbers('network-hospitals', hospitals);
+            animateNumbers('diagnostic-centers', diagnosticCenters);
+            animateNumbers('pharmacies', pharmacies);
+            animateNumbers('doctors', doctors);
+        });
+
+        function toggleDescription(button) {
+            const shortDesc = button.previousElementSibling.previousElementSibling;
+            const fullDesc = button.previousElementSibling;
+
+            if (fullDesc.style.display === "none") {
+                shortDesc.style.display = "none";
+                fullDesc.style.display = "block";
+                button.textContent = "See Less";
+            } else {
+                shortDesc.style.display = "block";
+                fullDesc.style.display = "none";
+                button.textContent = "See More";
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </script>
+</body>
+
+</html>

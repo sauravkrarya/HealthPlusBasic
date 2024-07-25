@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Details</title>
+    <style>
+        .hospitalDetails {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .hospitalLogo {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="hospitalDetails">
+        <img src="" alt="Hospital Logo" id="hospitalLogo" class="hospitalLogo">
+        <h1 id="hospitalName"></h1>
+        <p id="hospitalDescription"></p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hospital = JSON.parse(localStorage.getItem('selectedHospital'));
+            if (hospital) {
+                document.getElementById('hospitalLogo').src = hospital.logo;
+                document.getElementById('hospitalName').innerText = hospital.name;
+                document.getElementById('hospitalDescription').innerText = hospital.description;
+            }
+        });
+    </script>
+</body>
+</html>
