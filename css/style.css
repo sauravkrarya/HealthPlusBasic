@@ -528,6 +528,15 @@ nav {
   transform: scale(1.15);
 }
 
+.col-md-12{
+  width: 100%;
+  text-align:center;
+  padding: 20px 0;
+  background: #262626;
+  font-weight: 350;
+  margin-top:0px;
+  color: rgb(19, 235, 29);
+}
 
 
 
