@@ -128,42 +128,7 @@
                     </form>
                 </div>
             </div>
-            <!-- <hr>
-        <div>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-        </div> -->
+            
         </nav>
         <div class="info">
             <a href="disclaimer.html">Disclaimer</a>
@@ -223,7 +188,7 @@
         </div>
         <div class="operations">
             <a href="appointment.html">Book Appointment</a>
-            <a href="blood.html">Need Blood?</a>
+            <a href="blood.html" target="_blank">Need Blood?</a>
         </div>
 
         <div class="icon-container">
@@ -552,15 +517,12 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-12 ">
-
-                <p>Copyright 2024 © Saurav kumar Arya. All rights reserved. Made with <i class="fas fa-heart"></i> by Saurav Kr Arya</p>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center" id="copyright">
+                    <p>&copy; 2024 Health Plus. All Rights Reserved.</p>
+                </div>
             </div>
         </div>
-
 
     </footer>
 
@@ -568,93 +530,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script>
-        function hospitalDetails(hospitalName) {
-            const hospitals = {
-                "Medicare Hospital": {
-                    name: "Medicare Hospital",
-                    description: "Providing quality healthcare services to the community for over 50 years.",
-                    logo: "./img/medicare logo.webp"
-                },
-                "Global Health Clinic": {
-                    name: "Global Health Clinic",
-                    description: "World-class medical services with a focus on patient care and comfort.",
-                    logo: "./img/sum logo.jfif"
-                },
-                "Sunrise Medical Center": {
-                    name: "Sunrise Medical Center",
-                    description: "State-of-the-art facilities and experienced medical professionals.",
-                    logo: "./img/apollo logo.jfif"
-                },
-                "Heal Well Hospital": {
-                    name: "Heal Well Hospital",
-                    description: "Committed to providing compassionate and comprehensive care.",
-                    logo: "./img/kims logo.jfif"
-                },
-                "Care Hospital": {
-                    name: "Care Hospital",
-                    description: "Committed to providing compassionate and comprehensive care.",
-                    logo: "./img/care hospital.png"
-                },
-                "MedLife Hospital": {
-                    name: "MedLife Hospital",
-                    description: "Committed to providing compassionate and comprehensive care.",
-                    logo: "./img/medilife logo.avif"
-                }
-            };
-
-            // localStorage.setItem('selectedHospital', JSON.stringify(hospitals[hospitalName]));
-            // window.location.href = 'hospital-details.html';
-            localStorage.setItem('selectedHospital', JSON.stringify(hospitals[hospitalName]));
-            window.open('hospital-details.html', '_blank');
-        }
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            const hospitals = 10;
-            const diagnosticCenters = 50;
-            const pharmacies = 10;
-            const doctors = 500;
-
-            function animateNumbers(elementId, number) {
-                let counter = 0;
-                const element = document.getElementById(elementId);
-                const interval = setInterval(() => {
-                    if (counter >= number) {
-                        clearInterval(interval);
-                    } else {
-                        counter++;
-                        element.textContent = counter + '+';
-                    }
-                }, 20);
-            }
-
-            animateNumbers('network-hospitals', hospitals);
-            animateNumbers('diagnostic-centers', diagnosticCenters);
-            animateNumbers('pharmacies', pharmacies);
-            animateNumbers('doctors', doctors);
-        });
-
-        function toggleDescription(button) {
-            const shortDesc = button.previousElementSibling.previousElementSibling;
-            const fullDesc = button.previousElementSibling;
-
-            if (fullDesc.style.display === "none") {
-                shortDesc.style.display = "none";
-                fullDesc.style.display = "block";
-                button.textContent = "See Less";
-            } else {
-                shortDesc.style.display = "block";
-                fullDesc.style.display = "none";
-                button.textContent = "See More";
-            }
-        }
-    </script>
-
+    <script src="./js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </script>
+    <!-- </script> -->
 </body>
 
 </html>
