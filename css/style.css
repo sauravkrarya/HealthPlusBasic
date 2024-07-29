@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background-color: rgb(177, 252, 207);
@@ -32,6 +36,7 @@ body {
 
 .stick {
   position: fixed;
+  z-index: 1;
   top: 100px;
   right: 10px;
   display: flex;
@@ -53,6 +58,11 @@ body {
   text-decoration: none;
 }
 
+.ambulance {
+
+  /* background:linear-gradient( rgb(20, 177, 148),rgb(218, 153, 153)); */
+}
+
 .operations {
   position: fixed;
   bottom: 10px;
@@ -60,6 +70,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 1;
 }
 
 .operations>a {
@@ -102,14 +113,19 @@ nav {
   top: 0%;
 }
 
-.carousel-caption>h5{
+.carousel-caption>h5 {
   color: rgb(40, 39, 39);
-  font-size:2.5rem;
+  font-size: 2.5rem;
+  /* display:flex;
+  justify-content: center;
+  align-items: center; */
 }
-.cText{
+
+.cText {
   color: rgb(40, 39, 39);
-  font-size:1.5rem;
-  padding-bottom:150px;
+  font-size: 1.5rem;
+  padding-bottom: 150px;
+
 }
 
 /* .carousel-caption>h5{
@@ -138,22 +154,38 @@ nav {
     /* Change color on hover 
 } */
 .icon-container {
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .icon-container a {
   margin: 10px 0;
   text-decoration: none;
-  font-size: 34px;
+  font-size: 25px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 
 
+}
+
+@media(max-width:1000px) {
+  .icon-container {
+    position: fixed;
+
+
+  }
+
+  .btn1 {
+    padding: 5px 10px;
+    font-size: 10px;
+    border-radius:7px;
+  }
 }
 
 
@@ -181,64 +213,58 @@ nav {
 
 
 .serviceContainer {
-  /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    flex-direction: row;
-    flex-flow:wrap; */
-
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   margin-top: 20px;
 }
+.services>h1{
+  color:rgb(102, 3, 82);
+}
+
 
 .serviceItem {
-  /* margin: 10px;
-    border: 1px solid rgba(165, 165, 165, 0.95);
-    border-radius: 8px;
-    padding:10px;
-    width: 200px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    box-shadow:10px 5px 10px rgb(134, 137, 134);
-    background-color:rgb(136, 254, 201); */
 
 
-  transition: transform 0.3s ease-in;
+  transition: transform 0.25s ease-in;
   flex: 1 1 calc(25% - 20px);
   background-color: rgb(246, 246, 246);
   padding: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   border-radius: 8px;
-  box-shadow: 10px 5px 8px grey;
+  box-shadow: 8px 5px 8px rgb(208, 208, 208);
   text-align: center;
   min-width: 200px;
   max-width: 250px;
+
 }
+
+
+
 
 .serviceItem:hover {
 
-  /* background-color:rgb(170, 244, 255); */
-  background-color: rgb(107, 235, 255);
-  transform: scale(1.15);
+  background-color: rgb(242, 214, 251);
+  transform: scale(1.05);
 
 
 }
+.serviceItem img {
+  width: 100%;
+  height: 50%;
+  margin-right: 10px;
 
-.serviceItem>a {
+}
+.serviceItem>div>a {
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
+  color:blueviolet;
 
 }
+
 
 .serviceItem>p {
   text-align: center;
@@ -282,19 +308,19 @@ nav {
   background-color: rgb(248, 255, 252);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 10px 5px 8px grey;
+  box-shadow: 8px 5px 8px rgb(211, 210, 210);
   text-align: center;
   min-width: 200px;
   max-width: 250px;
-  transition: transform 0.3s ease-in;
+  transition: transform 0.25s ease-in;
 
 }
 
 .deptItem:hover {
 
   /* background-color:rgb(170, 244, 255); */
-  background-color: rgb(107, 235, 255);
-  transform: scale(1.15);
+  background-color: rgb(236, 203, 248);
+  transform: scale(1.1);
 
 
 }
@@ -302,7 +328,7 @@ nav {
 .deptItem i {
   font-size: 48px;
   margin-bottom: 10px;
-  color: blue;
+  color: rgb(228, 21, 27);
 }
 
 .deptItem h2 {
@@ -345,7 +371,7 @@ nav {
 }
 
 .hospitalCard:hover {
-  background-color: rgb(107, 235, 255);
+  background-color: rgb(237, 202, 246);
   transform: scale(1.05);
 }
 
@@ -510,33 +536,25 @@ nav {
   color: rgb(86, 5, 37);
   text-decoration: none;
   background-color: white;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px solid wheat;
+  /* border: 1px solid wheat; */
   border-radius: 7px;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 10px 10px 10px rgb(206, 204, 204);
+  gap:30px;
 
 
 }
 
 .help-item:hover {
   /* text-decoration: underline; */
-  background-color: rgb(168, 239, 251);
-  transform: scale(1.15);
+  background-color: rgb(243, 210, 255);
+  transform: scale(1.1);
 }
 
-.col-md-12{
-  width: 100%;
-  text-align:center;
-  padding: 20px 0;
-  background: #262626;
-  font-weight: 350;
-  margin-top:0px;
-  color: rgb(19, 235, 29);
-}
 
 
 
@@ -545,7 +563,7 @@ nav {
 .footer {
   background-color: rgb(46, 46, 46);
   color: white;
-  padding: 40px 0;
+  padding: 40px 40px 0 40px;
 }
 
 .footer a {
@@ -567,6 +585,7 @@ nav {
   margin: 0 10px;
   transition: transform 0.3s ease;
 }
+
 /* .footer .social-icons a:hover {
   transform:scale(1.1);
 } */
@@ -591,4 +610,3 @@ nav {
 .social-icons .linkedin i {
   color: rgb(0, 51, 129);
 }
-
