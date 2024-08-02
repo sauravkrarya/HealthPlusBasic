@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Services - Health Plus</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        body{
+            background-color:rgb(210, 225, 247);
+        }
+        #health{
+            color:rgb(58, 58, 58);
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        #logo {
+             width: 50px;
+        }
+        .opd-services {
+            padding: 50px 20px;
+        }
+
+        .opd-services img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .opd-services .requirements {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .opd-services .requirements li {
+            background: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .opd-services .requirements li img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        
+        .opd-services .form-group select,
+        .opd-services .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .opd-services .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(142, 19, 142);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .opd-services .form-group button:hover {
+            background-color: rgb(192, 83, 192);
+
+        }
+
+        .appointment-details {
+            margin-top: 30px;
+        }
+
+        .appointment-details h3 {
+            margin-bottom: 20px;
+        }
+        .form-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function showAppointmentDetails(event) {
+            event.preventDefault();
+            
+            const hospital = document.getElementById('hospital').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('date').value;
+
+            document.getElementById('appointment-hospital').innerText = hospital;
+            document.getElementById('appointment-name').innerText = name;
+            document.getElementById('appointment-email').innerText = email;
+            document.getElementById('appointment-phone').innerText = phone;
+            document.getElementById('appointment-date').innerText = date;
+
+            document.getElementById('appointment-details').style.display = 'block';
+        }
+
+        function showPaymentWindow() {
+            $('#paymentModal').modal('show');
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <img src="./img/health plus logo.jfif" alt="logo" id="logo">
+            <a class="navbar-brand" href="#" id="health">HEALTH<span style="color:green">⁺</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="book.html">Book Appointment</a></li>
+                            <li><a class="dropdown-item" href="blood.html">Blood Donation</a></li>
+                            <li><a class="dropdown-item" href="opd.html">OPD Service</a></li>
+                            <li><a class="dropdown-item" href="#hospitals">Find Hospitals</a></li>
+                            <li><a class="dropdown-item" href="book.html">Find a Doctor</a></li>
+                            <li><a class="dropdown-item" href="insurance.html">Health Insurance</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">See More...</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our Excellence
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                            <li><a class="dropdown-item" href="#">Orthopedics</a></li>
+                            <li><a class="dropdown-item" href="#">Gastroentrology</a></li>
+                            <li><a class="dropdown-item" href="#">Neurology</a></li>
+                            <li><a class="dropdown-item" href="#">Oncology</a></li>
+                            <li><a class="dropdown-item" href="#">Dermatology</a></li>
+                            <li><a class="dropdown-item" href="#">Nephrology</a></li>
+                            <li><a class="dropdown-item" href="#">dentistry</a></li>
+                            <li><a class="dropdown-item" href="#">ENT(Ear|Nose|Throat)</a></li>
+                            <li><a class="dropdown-item" href="#">Oncology</a></li>
+
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">See More...</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Hospitals
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Medicare Hospital</a></li>
+                            <li><a class="dropdown-item" href="#">Global Health Clinic </a></li>
+                            <li><a class="dropdown-item" href="#">Sunrise Medical Center</a></li>
+                            <li><a class="dropdown-item" href="#">Heal Well Hospital</a></li>
+                            <li><a class="dropdown-item" href="#">Care Hospital </a></li>
+                            <li><a class="dropdown-item" href="#">MedLife Hospital</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">See More...</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html/#blogs">Blogs</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+   
+
+<div class="container opd-services">
+    <h1 class="text-center">OPD Services</h1>
+    <hr size="3px" width="90%" color="black">
+    <div class="row form-container">
+        <div class="col-md-6">
+            <img src="./img/opd inside.webp" alt="OPD Services">
+        </div>
+        <div class="col-md-6">
+            <h3>Book OPD Appointment on Desired Hospital</h3>
+            <p>Our OPD (Outpatient Department) Services at Health Plus provide comprehensive medical care for patients who do not require overnight hospitalization. Our experienced medical professionals are committed to delivering high-quality care and personalized treatment plans to meet the unique needs of each patient.</p>
+            <p>Our OPD services include consultations, diagnosis, and treatment for a variety of medical conditions. We offer convenient appointment booking options and minimal waiting times to ensure a seamless and efficient healthcare experience.</p>
+  
+          
+        </div>
+        <div class="d-flex justify-content-center align-content-center flex-column">
+            <h3>Book Your OPD Appointment</h3>
+            <form onsubmit="showAppointmentDetails(event)">
+                <div class="form-group">
+                    <label for="hospital">Choose a Hospital:</label>
+                    <select id="hospital" class="form-control" required>
+                        <option value="">Select Hospital</option>
+                        <option value="Hospital 1">Medicare Hospital</option>
+                        <option value="Hospital 2">Global Health Clinic</option>
+                        <option value="Hospital 3">Sunrise Medicare Center</option>
+                        <option value="Hospital 4">Heal well Hospital</option>
+                        <option value="Hospital 5">Care Hospital</option>
+                        <option value="Hospital 6">Medlife Hospital</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Patient Name:</label>
+                    <input type="text" id="name" class="form-control"placeholder="Enter patient name"required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter email address" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" class="form-control" placeholder="Enter Phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Appointment Date:</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Book OPD Appointment</button>
+                </div>
+            </form>
+            <div id="appointment-details" class="appointment-details" style="display:none;">
+                <h3>Appointment Details</h3>
+                <p><strong>Hospital:</strong> <span id="appointment-hospital"></span></p>
+                <p><strong>Name:</strong> <span id="appointment-name"></span></p>
+                <p><strong>Email:</strong> <span id="appointment-email"></span></p>
+                <p><strong>Phone:</strong> <span id="appointment-phone"></span></p>
+                <p><strong>Date:</strong> <span id="appointment-date"></span></p>
+                <div class="form-group">
+                    <button onclick="showPaymentWindow()">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry Date:</label>
+                        <input type="text" id="expiryDate" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardHolderName">Cardholder Name:</label>
+                        <input type="text" id="cardHolderName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Make Payment</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 Health⁺. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact Us</a> | 
+            <a href="d and pp.html">Privacy Policy</a>
+        </p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Health⁺</title>
+    <link rel="icon" type="png" href="./img/health plus favicon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: white;
+            font-family:sans;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .about-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .developer-card {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .developer-card:nth-child(even) {
+            flex-direction: row-reverse;
+            background-color: rgb(220, 230, 246);
+        }
+
+        .developer-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .developer-details {
+            flex: 1;
+            padding: 0 20px;
+        }
+
+        .developer-details h3 {
+            margin: 0 0 10px;
+        }
+
+        .developer-details p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .developer-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .developer-card:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .developer-card img {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .developer-card {
+                max-width: 70%;
+                margin: 20px auto;
+                /* Center the cards horizontally */
+            }
+        }
+        #health{
+            color:rgb(58, 58, 58);
+            font-weight: 700;
+            font-size: 1.8rem;
+        }
+
+        #logo {
+             width: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid">
+                <img src="./img/health plus logo.jfif" alt="logo" id="logo">
+                <a class="navbar-brand" href="#" id="health">HEALTH<span style="color:green">⁺</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="book.html">Book Appointment</a></li>
+                                <li><a class="dropdown-item" href="blood.html">Blood Donation</a></li>
+                                <li><a class="dropdown-item" href="opd.html">OPD Service</a></li>
+                                <li><a class="dropdown-item" href="#hospitals">Find Hospitals</a></li>
+                                <li><a class="dropdown-item" href="book.html">Find a Doctor</a></li>
+                                <li><a class="dropdown-item" href="insurance.html">Health Insurance</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Excellence
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Cardiology</a></li>
+                                <li><a class="dropdown-item" href="#">Orthopedics</a></li>
+                                <li><a class="dropdown-item" href="#">Gastroentrology</a></li>
+                                <li><a class="dropdown-item" href="#">Neurology</a></li>
+                                <li><a class="dropdown-item" href="#">Oncology</a></li>
+                                <li><a class="dropdown-item" href="#">Dermatology</a></li>
+                                <li><a class="dropdown-item" href="#">Nephrology</a></li>
+                                <li><a class="dropdown-item" href="#">dentistry</a></li>
+                                <li><a class="dropdown-item" href="#">ENT(Ear|Nose|Throat)</a></li>
+                                <li><a class="dropdown-item" href="#">Oncology</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hospitals
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Medicare Hospital</a></li>
+                                <li><a class="dropdown-item" href="#">Global Health Clinic </a></li>
+                                <li><a class="dropdown-item" href="#">Sunrise Medical Center</a></li>
+                                <li><a class="dropdown-item" href="#">Heal Well Hospital</a></li>
+                                <li><a class="dropdown-item" href="#">Care Hospital </a></li>
+                                <li><a class="dropdown-item" href="#">MedLife Hospital</a></li>
+
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">See More...</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html/#blogs">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+
+        <div class="container">
+            <!-- <h1 class="text-center my-4 main-heading">About <span id="health">Health<span id="plus">⁺</span></span></h1> -->
+            <div class="about-section">
+                <h1>About Us</h1><hr color="black">
+                <p>
+                    <b>Health⁺ </b> is a revolutionary platform designed to unify various hospitals and provide a seamless
+                    appointment booking experience. Our mission is to make healthcare accessible and convenient for
+                    everyone. Whether you need to book an appointment at your preferred hospital, consult with a doctor
+                    online, or find specific specialists, Health⁺ has got you covered. Our emergency blood donation service
+                    ensures that you can always find and donate blood in critical times, saving lives when it matters the
+                    most.
+                </p>
+            </div>
+            <h2 class="text-center my-4">Our Team</h2><hr color="black">
+            <div class="developer-card">
+                <img src="./img/deepak.jpeg" alt="Developer 1">
+                <div class="developer-details">
+                    <h3>Deepak Muduli</h3>
+                    <p>Role: Database Administrator</p>
+                    <p>Master of Computer Application.</p>
+
+                </div>
+            </div>
+            <div class="developer-card">
+            <img src="./img/rajat.jpeg" alt="Developer 2">
+            <div class="developer-details">
+                <h3>Rajat kr Barik</h3>
+                <p>Role: Backend Developer</p>
+                <p>Master of Computer Application.</p>
+
+            </div>
+        </div>
+        <div class="developer-card">
+            <img src="./img/saurav.jpeg" alt="Developer 3">
+            <div class="developer-details">
+                <h3>Saurav kr Arya</h3>
+                <p>Role: Scrum Master</p>
+                <p>Master of Computer Application.</p>
+            </div>
+        </div>
+        <div class="developer-card">
+            <img src="./img/satyaj.jpeg" alt="Developer 4">
+            <div class="developer-details">
+                <h3>Satyajit Patra</h3>
+                <p>Role:UI/UX </p>
+                <p>Master of Computer Application.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2024 Health⁺. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="contact.html">Contact Us</a> | 
+            <a href="d and pp.html">Privacy Policy</a>
+        </p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
